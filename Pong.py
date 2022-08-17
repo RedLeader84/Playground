@@ -29,5 +29,5 @@ paddle_b.penup()
 paddle_b.goto(350, 0)
 
 # Ball
-123
+
 
