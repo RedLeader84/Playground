@@ -1,6 +1,7 @@
 import turtle
 import os 
 
+
 wn = turtle.Screen()
 wn.title("Pong by @GarrettB")
 wn.bgcolor("black")
@@ -29,5 +30,4 @@ paddle_b.penup()
 paddle_b.goto(350, 0)
 
 # Ball
-
 
