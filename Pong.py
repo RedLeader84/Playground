@@ -1,5 +1,8 @@
+#!/usr/bin/env python3.10
 
 import turtle
+import os
+import _tkinter as tk
 
 wn = turtle.Screen()
 wn.title("Pong by @Garrett")
@@ -18,5 +21,10 @@ paddle_a.goto(-350, 0)
 
 # Paddle B
 
-
-input()
+paddle_b = turtle.Turtle()
+paddle_b.speed(0)
+paddle_b.shape("square")
+paddle_b.color("white")
+paddle_b.shapesize(stretch_wid=5, stretch_len=1)
+paddle_b.penup()
+paddle_b.goto(350, 0)
