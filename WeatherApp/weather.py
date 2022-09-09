@@ -44,6 +44,11 @@ wind = json_data['main']['wind']
 t.config(text=(temp, "°"))
 c.config(text=(condition, "|", "FEELS", "LIKE", temp, "°"))
 
+w.config(text=wind)
+h.config(text=humidity)
+p.config(text=pressure)
+d.config(text=description)
+
 # Search Box
 Search_image = PhotoImage(file="Search.png")
 myimage = Label(image=Search_image)
