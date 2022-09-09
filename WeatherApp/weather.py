@@ -31,7 +31,7 @@ def getweather():
 
 
 # Weather
-api = 'https://api.openweathermap.org/data/2.5/weather?q= + city + &9b4997813c1177390454c54d3a612e09'
+api = 'https://api.openweathermap.org/data/2.5/weather?q= + city + &appid=9b4997813c1177390454c54d3a612e09'
 
 json_data = requests.get(api).json()
 condition = json_data['weather'][0]['main']
