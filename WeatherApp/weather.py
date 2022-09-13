@@ -15,7 +15,8 @@ root.resizable(False, False)
 
 # API
 def getweather():
-    city = textfield.get()
+    try:
+        city = textfield.get()
 
     geolocator = Nominatim(user_agent="geoapiExercises")
     location = geolocator.geocode(city)
@@ -30,24 +31,27 @@ def getweather():
     name.config(text="Current Weather")
 
 
-# Weather
-api = 'https://api.openweathermap.org/data/2.5/weather?q= + city + &appid=9b4997813c1177390454c54d3a612e09'
+    # Weather
+    api = 'https://api.openweathermap.org/data/2.5/weather?q= + city + &appid=9b4997813c1177390454c54d3a612e09'
 
-json_data = requests.get(api).json()
-condition = json_data['weather'][0]['main']
-description = json_data['weather'][0]['description']
-temp = int(json_data['main']['temp'] - 273.15)
-pressure = json_data['main']['pressure']
-humidity = json_data['main']['humidity']
-wind = json_data['main']['wind']
+    json_data = requests.get(api).json()
+    condition = json_data['weather'][0]['main']
+    description = json_data['weather'][0]['description']
+    temp = int(json_data['main']['temp'] - 273.15)
+    pressure = json_data['main']['pressure']
+    humidity = json_data['main']['humidity']
+    wind = json_data['main']['wind']
 
-t.config(text=(temp, "°"))
-c.config(text=(condition, "|", "FEELS", "LIKE", temp, "°"))
+    t.config(text=(temp, "°"))
+    c.config(text=(condition, "|", "FEELS", "LIKE", temp, "°"))
 
-w.config(text=wind)
-h.config(text=humidity)
-p.config(text=pressure)
-d.config(text=description)
+    w.config(text=wind)
+    h.config(text=humidity)
+    p.config(text=pressure)
+    d.config(text=description)
+
+except Exception as e:
+messagebox.showerror("Weather App", "Invalid Entry!!")
 
 # Search Box
 Search_image = PhotoImage(file="Search.png")
