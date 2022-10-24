@@ -1,8 +1,10 @@
+## Pong
+
 #!/usr/bin/env python3.10
 
 import turtle
 import os
-importtkinter
+import _tkinter
 
 wn = turtle.Screen()
 wn.title("Pong by @Garrett")

@@ -1,3 +1,5 @@
+## Fundamentals
+
 name = input("What is your name? ")
 age = input("Whats your age? ")
 
