@@ -2,7 +2,7 @@
 
 import turtle
 import os
-importtkinter
+import _tkinter
 
 wn = turtle.Screen()
 wn.title("Pong by @Garrett")
