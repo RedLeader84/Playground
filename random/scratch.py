@@ -11,25 +11,28 @@
 #else :
 #    print('Something else')
 
-score = float(input("Enter Score: "))
-s = float(score)
-
-
+#score = float(input("Enter Score: "))
+#s = float(score)
       
-try:        
-    if s >= 0.9:
-        print (str("A"))
-    elif s >= 0.8:
-        print (str("B"))
-    elif s >= 0.7:
-        print (str("C"))
-    elif s >= 0.6:
-        print (str("D"))
-    elif s < 0.6:
-        print (str("F"))
+#try:        
+    #if s >= 0.9:
+        #print (str("A"))
+    #elif s >= 0.8:
+        #print (str("B"))
+    #elif s >= 0.7:
+        #print (str("C"))
+    #elif s >= 0.6:
+        #print (str("D"))
+    #elif s < 0.6:
+        #print (str("F"))
         
-except:
-    if s < 0.0:
-        print ("Score Cannot be Lower than 0.0")
-    if s > 1.0:
-        print ("Score Cannot be Higher than 1.0")
+#except:
+    #if s < 0.0:
+        #print ("Score Cannot be Lower than 0.0")
+    #if s > 1.0:
+        #print ("Score Cannot be Higher than 1.0")
+        
+        tot = 0 
+for i in [5, 4, 3, 2, 1] :
+    tot = tot + 1
+print(tot)
