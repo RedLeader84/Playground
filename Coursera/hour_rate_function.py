@@ -1,4 +1,4 @@
-    
+     
 def computepay(h, r):
     hrs = input("Enter Hours Worked:")
     rate = float(input("Enter Rate of Pay:"))
