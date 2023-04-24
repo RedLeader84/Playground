@@ -1,5 +1,7 @@
 # Use words.txt as the file name
 import os
+os.chdir("/Users/garrettblankenship/Documents/repo/github/playground/coursera")
+
 fname = input("Enter file name: ")
 try:
     fhand = open(fname,'r')
