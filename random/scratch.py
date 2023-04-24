@@ -32,7 +32,7 @@
     #if s > 1.0:
         #print ("Score Cannot be Higher than 1.0")
         
-        tot = 0 
+tot = 0 
 for i in [5, 4, 3, 2, 1] :
     tot = tot + 1
 print(tot)
