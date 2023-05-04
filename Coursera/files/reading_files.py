@@ -1,6 +1,6 @@
 # Use words.txt as the file name
 import os
-os.chdir("/Users/garrettblankenship/Documents/repo/github/playground/coursera")
+os.chdir("/Users/garrettblankenship/Documents/repo/github/playground/coursera/files")
 
 fname = input("Enter file name: ")
 try:
