@@ -10,11 +10,11 @@ with os.scandir(source_dir) as entries:
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-source_dir = "Users/garrettblankenship/Downloads"
-dest_dir_sfx = "/Users/garrettblankenship/Sound"
-dest_dir_video = "/Users/garrettblankenship/Desktop/Downloaded Video"
-dest_dir_image = "/Users/garrettblankenship/Desktop/Downloaded Images"
-dest_dir_music = "/Users/garrettblankenship/Sound/Muswak"
+source_dir = "Users/user/Downloads"
+dest_dir_sfx = "/Users/user/Sound"
+dest_dir_video = "/Users/user/Desktop/Downloaded Video"
+dest_dir_image = "/Users/user/Desktop/Downloaded Images"
+dest_dir_music = "/Users/user/Sound/Muswak"
 
 def makeUnique(path):
     
