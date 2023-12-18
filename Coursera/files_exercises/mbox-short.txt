@@ -1907,3 +1907,4 @@ Course grade does not appear on "All Grades" page if no categories in gb
 ----------------------
 This automatic notification message was sent by Sakai Collab (https://collab.sakaiproject.org/portal) from the Source site.
 You can modify how you receive notifications at My Workspace > Preferences.
+
